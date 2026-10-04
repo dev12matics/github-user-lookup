@@ -1,26 +1,29 @@
 # GitHub User Lookup
 
-A beginner Python project that retrieves public profile information from the GitHub API.
+A Python command-line tool that retrieves and displays public GitHub profile data through the GitHub API.
 
 ## Features
 
-- Prompts for a GitHub username
-- Retrieves public profile information using the GitHub API
-- Displays the username, public repository count, follower count, and bio
-- Handles accounts that do not have a bio
+- Looks up a GitHub account by username
+- Retrieves public profile information from the GitHub API
+- Displays repository count, follower count, username, and bio
+- Handles profiles without a bio
+- Checks HTTP response status before processing returned data
 
-## Requirements
+## Tech
 
-- Python 3
-- The `requests` library
+- Python
+- `requests`
+- REST APIs
+- JSON
 
-Install the dependency with:
+## Setup
+
+Install the required dependency:
 
 ```bash
 python -m pip install requests
 ```
-
-## Usage
 
 Run the program:
 
@@ -28,12 +31,10 @@ Run the program:
 python github_user_lookup.py
 ```
 
-Enter a GitHub username when prompted.
+## What this project demonstrates
 
-## What I Learned
-
-- Making HTTP GET requests with `requests`
+- Making HTTP GET requests
 - Working with JSON responses
-- Reading values from Python dictionaries
-- Checking HTTP status codes
-- Building URLs with f-strings
+- Reading structured API data
+- Basic error handling
+- Building URLs and processing user input
